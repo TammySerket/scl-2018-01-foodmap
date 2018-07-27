@@ -1,13 +1,30 @@
-.{box-sizing: border-box;}
-.map {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-  }
+mapa {
+  height: 100%;
+  display: block;
+  box-align: center;
+  position: relative;
+  align-content: center;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  text-align: center;
+  color: green;
+background-color: aquamarine;
+text-shadow: -1px 2px 2px #000;
+}
   body {
     margin: 0;
     padding: 0;
     font-family: monospace;
+    background-image: url("https://st2.depositphotos.com/2013817/7213/v/950/depositphotos_72133853-stock-illustration-kitchen-sketch-utensils.jpg")
+  }
+  .button {
+    color: #000;
   }
   .preload {
     width: 100%;

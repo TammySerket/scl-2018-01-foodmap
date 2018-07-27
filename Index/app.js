@@ -1,12 +1,3 @@
-let data;
-
-fetch(`https://places.cit.api.here.com/places/v1/discover/explore?app_id=Q2XhzJodzEIn144Q5fAZ&app_code=ZO2Nr7ywg36TVPqrIUM5oA&at=-33.43727,-70.650556&pretty`)
-.then(answer => answer.json())
-.then(data => {
-    console.log(data);
-   //tipeOfFood(data)
-});
-
 let map;
 let infowindow;
 
@@ -35,7 +26,7 @@ let infowindow;
    const request = {
      location: myLatlng,
      radius: 5000,
-     types: ['restaurante']
+     types: ['restaurant']
    };
 
    // Creamos el servicio PlaceService y enviamos la petición.
@@ -63,6 +54,7 @@ let infowindow;
    google.maps.event.addListener(marker, 'click', function() {
      infowindow.setContent(place.name);
      infowindow.open(map, this);
+     console.log(marker);
    });
    }
 
@@ -73,6 +65,24 @@ service.getDetails({
  if (status == google.maps.places.PlacesServiceStatus.OK) {
    alert(placeDetails.formatted_address);
  }});
+
+ function addStopOverMarker(map) {
+  const stopOver = new google.maps.places.Autocomplete(document.getElementById('stopOver'));
+  google.maps.event.addListener(stopOver, 'place_changed', function() {
+    const coord = stopOver.getPlace().geometry.location;
+    console.log(coord);
+    var marker = new google.maps.Marker({
+      position: coord,
+      map: map,
+      draggable: true,
+      visible: true,
+      placeId: place.place_id
+    });
+  });
+}
+
+
+
 
 
 //Funcion para busqueda

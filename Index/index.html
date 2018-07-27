@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDy3Zj3GZWWgeomOP_vhKkP_XFijRd_Y5c&libraries=places&callback="></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDy3Zj3GZWWgeomOP_vhKkP_XFijRd_Y5c&libraries=geometry,places,geolocation"></script>
     
   </head>
 
@@ -19,19 +19,20 @@
             <h1>FOOD-MAP</h1>
         </div>
     </header>
+
     <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buscar</button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Tipo de Comida</a>
-                <a class="dropdown-item" href="#">Nombre Restaurant</a>
-                <a class="dropdown-item" href="#">Dirección</a>
-              </div>
+              <label class="input-group-text" for="inputGroupSelect01">Buscar</label>
             </div>
-            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected></option>
+              <option value="1">Tipo de Comida</option>
+              <option value="2">Nombre Restaurant</option>
+              <option value="3">Dirección</option>
+            </select>
           </div>
-        <div id="mapa" class="map" style="width: 700px; height: 500px;"></div>
-        
+
+       <div id="mapa" class="map" style="width: 700px; height: 500px;"></div> 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
