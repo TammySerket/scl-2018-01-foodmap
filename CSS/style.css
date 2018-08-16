@@ -1,0 +1,31 @@
+.map {
+  height: 100%;
+  display: block;
+  box-align: center;
+  position: relative;
+  align-content: center;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  text-align: center;
+  color: green;
+  background-color: rgb(71, 224, 173);
+  text-shadow: -1px 2px 2px #000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: black;
+  }
+  .button {
+    color: #000;
+  }
+  

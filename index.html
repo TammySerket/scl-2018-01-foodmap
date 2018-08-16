@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyAWMTXH8_lIpGa3HOVKVfBWVw-ol34AT3w&libraries=geometry,places,geolocation"></script>
+        <link rel="stylesheet" href="/Index/style.css">
+    <title>FOODMAP</title>
+</head>
+<body onload="initMap()">
+
+    <header>
+        <div class="header">
+            <h1>FOOD-MAP</h1>
+        </div>
+    </header>
+
+     <!-- Dropdown Trigger -->
+  <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">Restaurantes</a></li>
+    <li><a href="#!">two</a></li>
+    <li><a href="#!">three</a></li>
+    <li><a href="#!">four</a></li>
+    <li><a href="#!">five</a></li>
+  </ul>
+
+       <div id="mapa" class="map" style="width: 700px; height: 500px;"></div> 
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+       <script type="text/javascript" src="js/materialize.min.js"></script>
+       <script src="/JS/app.js"></script>
+       <script type="text/javascript">document.addEventListener('DOMContentLoaded', function () {
+    M.AutoInit();
+  });
+</script>
+</body>
+</html>
