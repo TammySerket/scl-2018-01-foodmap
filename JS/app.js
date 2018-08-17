@@ -1,8 +1,7 @@
 let map;
 let infowindow;
 
- function initMap()
- {
+ function initMap() {
  // Creamos un mapa con las coordenadas actuales
    navigator.geolocation.getCurrentPosition(function(pos) {
 
@@ -26,7 +25,8 @@ let infowindow;
    const request = {
      location: myLatlng,
      radius: 5000,
-     types: ['restaurant']
+     types: ["commerceType"],
+     key: "AIzaSyCwuJFWpike7UG7LNrFMSuFZpKr6w3KQ5s"
    };
 
    // Creamos el servicio PlaceService y enviamos la petición.
@@ -58,7 +58,7 @@ let infowindow;
    });
    }
 
-const service = new google.maps.places.PlacesService(map);
+/*const service = new google.maps.places.PlacesService(map);
 service.getDetails({
    placeId: place.place_id,
  }, function (placeDetails, status) {
@@ -79,7 +79,7 @@ service.getDetails({
       placeId: place.place_id
     });
   });
-}
+}*/
 
 
 
