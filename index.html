@@ -18,9 +18,11 @@
             <h1>FOOD-MAP</h1>
         </div>
     </header>
+    <br>
 
+<div class="content">
      <!-- Dropdown Trigger -->
-  <a class='dropdown-trigger btn' href='#' onchange="commerceType()" data-target='dropdown1'>Selecciona lo que buscas!</a>
+  <a class='dropdown-trigger btn' href='#' onchange="commerceType()" data-target='dropdown1'>Selecciona lo que buscas</a>
 
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
@@ -29,10 +31,12 @@
     <li value="meal_delivery"><a href="#!">Deliverys</a></li>
     <li value="meal_takeaway"><a href="#!">Para llevar</a></li>
   </ul>
+</div>
 
-
+<!-- MAPA-->
+<div class="map row center-align">
        <div id="mapa" class="map" style="align-content: center"></div> 
-    
+    </div>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
        <script type="text/javascript" src="js/materialize.min.js"></script>
        <script src="/JS/app.js"></script>

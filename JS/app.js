@@ -25,8 +25,8 @@ let infowindow;
    const request = {
      location: myLatlng,
      radius: 5000,
-     types: ["commerceType"],
-     key: "AIzaSyCwuJFWpike7UG7LNrFMSuFZpKr6w3KQ5s"
+     types: ["Restaurante"],
+     key: "AIzaSyDnT1dhbeOikpBSW1FydmHEu7m6MyNBiVM"
    };
 
    // Creamos el servicio PlaceService y enviamos la petición.
@@ -42,8 +42,7 @@ let infowindow;
  });
 }
 
- function crearMarcador(place)
- {
+ function crearMarcador(place) {
    // Creamos un marcador
    const marker = new google.maps.Marker({
      map: map,
@@ -58,15 +57,15 @@ let infowindow;
    });
    }
 
-/*const service = new google.maps.places.PlacesService(map);
-service.getDetails({
+const infoPlace = new google.maps.places.PlacesService(map);
+infoPlace.getDetails({
    placeId: place.place_id,
  }, function (placeDetails, status) {
  if (status == google.maps.places.PlacesServiceStatus.OK) {
    alert(placeDetails.formatted_address);
  }});
 
- function addStopOverMarker(map) {
+/* function addStopOverMarker(map) {
   const stopOver = new google.maps.places.Autocomplete(document.getElementById('stopOver'));
   google.maps.event.addListener(stopOver, 'place_changed', function() {
     const coord = stopOver.getPlace().geometry.location;
